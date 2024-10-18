@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            color: rgb(126, 79, 79);
+        }
+        body{
+            background-color: azure;
+        }
+        .main{
+            border: 1px solid white;
+            height: 800px;
+            width: 600px;
+            border-radius: 30px;
+            background-color: rgb(241, 249, 255);
+            box-shadow: inset 0px 0px 100px rgba(70, 91, 187, 0.281);
+            margin-top: 8%;
+            margin-left: 40%;
+            
+        }
+        h1{
+            text-align: center;
+            font-size: 50px;
+            border: 0px solid grey;
+            width: 550px;
+            height: 80px;
+            padding: 5px;
+            margin: 18px;
+            border-radius: 25px;
+            line-height: 70px;
+            color: rgb(126, 79, 79);
+            background-color: rgb(189, 205, 248);
+        }
+        input{
+            border: 0px;
+            border-radius: 18px;
+            font-size: 25px;
+            text-indent: 8px;
+            width: 390px;
+            height: 53px;
+        }
+        input:hover{
+            background-color: rgba(231, 228, 228, 0.712);
+        }
+        label{
+            font-size: 25px;
+            line-height: 70px;
+            margin-left: 30px;
+        }
+        
+        textarea{
+            margin-left: 33px;
+            margin-bottom: 40px;
+            font-size: 30px;
+            border: 0px;
+            border-radius: 20px;
+            text-indent: 10px;
+            
+        }
+        textarea:hover{
+            background-color: rgba(231, 228, 228, 0.712);
+        }
+        .save{
+            width: 220px;
+            height: 60px;
+            border-radius: 20px;
+            border: 0px;
+            background-color: rgb(133, 185, 253);
+            margin-left: 31%;
+            /* margin-top: 2px; */
+            font-size: 30px;
+            color: rgb(86, 88, 201);
+            font-weight: 700;
+
+        }
+        .reset{
+            width: 220px;
+            height: 60px;
+            border-radius: 20px;
+            background-color: rgb(133, 185, 253);
+            margin-left: 31%;
+            margin-top: 30px;
+            font-size: 30px;
+            color: rgb(86, 88, 201);
+            font-weight: 700;
+        }
+        .reset:hover{
+            background-color: rgb(133, 185, 253);
+            transform: scale(1.2,1.2);
+            transition: all .3s ease-in-out 0s ;
+        }
+        .save:hover{
+            transform: scale(1.2,1.2);
+            transition: all .3s ease-in-out 0s ;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="main">
+        <div>
+            <h1>Contact Form</h1>
+            <form action="post">
+            <label for="FN">First Name</label>
+            <input type="text" id="FN" name="FN" placeholder="Enter Name">
+            <br>
+            <label for="FN">Last Name</label>
+            <input type="text" id="LN" name="LN" placeholder="Enter Surname">
+            <br>
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter Phone Number">
+            <br>
+            <label class="add" for="address">Enter Address:</label>
+            <textarea name="address" id="address" placeholder="Enter Address" rows="4" cols="28"></textarea>
+            <br>
+            <button class="save">Save</button>
+            <br>
+            <input class="reset" type="reset" id="reset" name="reset">
+        </form>
+        </div>
+    </div>
+
+</body>
+</html>
